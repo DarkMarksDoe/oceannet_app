@@ -13,7 +13,7 @@ Flutter Challenge for Ocean Pacific
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-| <img  width="250"  alt="GET ALL"  src="https://i.ibb.co/xsr15NM/GET.png"> GET::users/ | <img  width="250"  alt="GET ONE"  src="https://i.ibb.co/brR8cfs/GET-2.png"> GET::users/{id} |<img  width="250"  alt="POST"  src="https://i.ibb.co/gvnyC2S/POST.png"> POST::users |
+| <img  width="250"  alt="GET ALL"  src="https://i.ibb.co/xsr15NM/GET.png"> GET::users/ | <img  width="250"  alt="GET ONE"  src="https://i.ibb.co/brR8cfs/GET-2.png"> GET::users/{id} |<img  width="280"  alt="POST"  src="https://i.ibb.co/gvnyC2S/POST.png"> POST::users |
 | <img  width="250"  alt="DELETE"  src="https://i.ibb.co/gvnyC2S/DELETE.png"> DELETE::users/{id} | <img  width="250"  alt="PUT"  src="https://i.ibb.co/Qr6NQbp/PUT.png"> GET::users/{id} | Coming soon gif of the app |
 
   
