@@ -1,0 +1,50 @@
+name: oceannet
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  geolocator: ^6.1.13
+  provider: ^4.3.2+4
+  http: ^0.12.2
+  intl: ^0.16.1
+  fluttertoast: ^7.1.6
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-Light.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-SemiBold.ttf
+
+    - family: Chivo
+      fonts:
+        - asset: assets/fonts/Chivo/Chivo-Black.ttf
+        - asset: assets/fonts/Chivo/Chivo-BlackItalic.ttf
+        - asset: assets/fonts/Chivo/Chivo-Bold.ttf
+        - asset: assets/fonts/Chivo/Chivo-BoldItalic.ttf
+        - asset: assets/fonts/Chivo/Chivo-Italic.ttf
+        - asset: assets/fonts/Chivo/Chivo-Light.ttf
+        - asset: assets/fonts/Chivo/Chivo-LightItalic.ttf
+        - asset: assets/fonts/Chivo/Chivo-Regular.ttf
+  assets:
+    - assets/
+
+  uses-material-design: true
