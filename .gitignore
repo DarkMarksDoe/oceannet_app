@@ -10,6 +10,7 @@
 .svn/
 .vscode/
 build/
+*.lock
 
 # IntelliJ related
 *.iml
@@ -32,7 +33,9 @@ build/
 .packages
 .pub-cache/
 .pub/
+.fvm/
 /build/
+/gen
 
 # Web related
 lib/generated_plugin_registrant.dart

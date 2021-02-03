@@ -17,6 +17,8 @@ class _NewUserPageState extends State<NewUserPage> {
   String dropdownValue;
   DateTime selectedDate;
   Position myPosition;
+  double latitude;
+  double longitude;
   String position;
 
   String name;
@@ -80,7 +82,15 @@ class _NewUserPageState extends State<NewUserPage> {
           ),
           ListTile(
             leading: Icon(Icons.location_pin),
-            title: Text(position),
+            title: position == ""
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Latitude: $latitude'),
+                      Text('Longitude: $longitude'),
+                    ],
+                  )
+                : Text(position),
             subtitle: Text('This is your device location'),
           ),
           RaisedButton(
@@ -139,8 +149,7 @@ class _NewUserPageState extends State<NewUserPage> {
           dropdownValue = newValue;
         });
       },
-      items: <String>['male', 'female']
-          .map<DropdownMenuItem<String>>((String value) {
+      items: <String>['male', 'female'].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
           value: value,
           child: Text(value),
@@ -149,13 +158,14 @@ class _NewUserPageState extends State<NewUserPage> {
     );
   }
 
-  void _getPosition() async {
-    Position currentPosition = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.best);
+  Future _getPosition() async {
+    Position currentPosition =
+        await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
     setState(() {
       myPosition = currentPosition;
-      position =
-          'Lat: ${myPosition.latitude.toString()}, Long: ${myPosition.longitude.toString()}';
+      latitude = myPosition.latitude;
+      longitude = myPosition.longitude;
+      position = '';
     });
   }
 
